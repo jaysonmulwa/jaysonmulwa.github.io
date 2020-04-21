@@ -39,7 +39,7 @@
       https://raw.githubusercontent.com/CSSEGISandData/COVID-19/master/csse_covid_19_data/csse_covid_19_daily_reports/04-20-2020.csv
       */
 
-      function getText(){
+      
           // read text from URL location
           var request = new XMLHttpRequest();
           request.open('GET', 'https://raw.githubusercontent.com/CSSEGISandData/COVID-19/master/csse_covid_19_data/csse_covid_19_daily_reports/04-20-2020.csv', true);
@@ -48,17 +48,12 @@
               if (request.readyState === 4 && request.status === 200) {
                   var type = request.getResponseHeader('Content-Type');
                   if (type.indexOf("text") !== 1) {
-                      return request.responseText;
+                      alert(request.responseText);
                   }
               }
           }
-      }
-      function populateTables(){
-
-          var outer_text = getText();
-        alert(outer_text);
-        
-      }
+      
+    
       
       </script>
 
