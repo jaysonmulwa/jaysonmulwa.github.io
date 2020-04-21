@@ -40,7 +40,7 @@
       */
       
      
-      function getcsv(){
+      
           // read text from URL location
           var request = new XMLHttpRequest();
           request.open('GET', 'https://raw.githubusercontent.com/CSSEGISandData/COVID-19/master/csse_covid_19_data/csse_covid_19_daily_reports/04-20-2020.csv', true);
@@ -50,32 +50,33 @@
                   var type = request.getResponseHeader('Content-Type');
                   if (type.indexOf("text") !== 1) {
                       //alert(request.responseText);
-                    return request.responseText;
+                    //return request.responseText;
+                     var allText = request.responseText;
+                      var record_num = 5;  // or however many elements there are in each row
+                      var allTextLines = allText.split(/\r\n|\n/);
+                      var entries = allTextLines[0].split(',');
+                      var lines = [];
+
+                      var headings = entries.splice(0,record_num);
+                      while (entries.length>0) {
+                          var tarr = [];
+                          for (var j=0; j<record_num; j++) {
+                              tarr.push(headings[j]+":"+entries.shift());
+                          }
+                          lines.push(tarr);
+                      }
+                     alert(lines);
                   }
               }
           }
-      }
       
       
-  function processData() {
-    var allText = getcsv();
-    var record_num = 5;  // or however many elements there are in each row
-    var allTextLines = allText.split(/\r\n|\n/);
-    var entries = allTextLines[0].split(',');
-    var lines = [];
+      
 
-    var headings = entries.splice(0,record_num);
-    while (entries.length>0) {
-        var tarr = [];
-        for (var j=0; j<record_num; j++) {
-            tarr.push(headings[j]+":"+entries.shift());
-        }
-        lines.push(tarr);
-    }
-   alert(lines);
-}
+   
+
       
-       processData();
+      
 
     
       
