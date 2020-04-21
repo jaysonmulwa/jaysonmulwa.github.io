@@ -1,2 +1,2 @@
 # jaysonmulwa.github.io
-My Personal Portfolio/ Online Resume.
+My Personal Portfolio and Online Resume.
