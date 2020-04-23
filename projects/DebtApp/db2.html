@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>DEVTEST</title>
+<link rel="shortcut icon" href="../images/pic2.png" type="image/x-icon" />
+
+
+<link href="css/bootstrap.min.css" rel="stylesheet">
+<link href="css/datepicker3.css" rel="stylesheet">
+<link href="css/styles.css" rel="stylesheet">
+
+<link href="vendors/datatables.net-buttons-bs/css/buttons.bootstrap.min.css" rel="stylesheet">
+<link href="build/css/custom.min.css" rel="stylesheet"><!--Datatables-->
+
+<!--Icons-->
+<script src="js/lumino.glyphs.js"></script>
+
+
+
+<script type="text/javascript">
+
+  function logout()
+{
+
+
+      
+                var email = "foo"
+                var password = "bar"
+				
+                
+                $.ajax({
+                    type: "POST",
+                    cache: false,        
+                    url: 'php_logout.php',
+                    
+					data: {email: email, password: password},
+                    success: function(data) {
+                       
+						window.location.href="login.html";
+					
+                    }
+                });
+            
+}
+</script>	
+	
+	
+				
+
+<!--delete---->
+
+<script type="text/javascript">
+
+  function table()
+{
+
+
+    
+	  	 
+
+            
+}
+</script>
+<!--[if lt IE 9]>
+<script src="js/html5shiv.js"></script>
+<script src="js/respond.min.js"></script>
+<![endif]-->
+
+</head>
+
+<body>
+	<nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+		<div class="container-fluid">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#sidebar-collapse">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<a class="navbar-brand" href="#"><span>DevTest </span></a>
+				<ul class="user-menu">
+					<li class="dropdown pull-right">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown"><svg class="glyph stroked male-user"><use xlink:href="#stroked-male-user"></use></svg> Online </a>
+						
+					</li>
+				</ul>
+			</div>
+							
+		</div><!-- /.container-fluid -->
+	</nav>
+		
+	<div id="sidebar-collapse" class="col-sm-3 col-lg-2 sidebar">
+		
+		<ul class="nav menu">
+			<li class=><a href="db.html"><svg class="glyph stroked line-graph"><use xlink:href="#stroked-line-graph"></use></svg>Search customers</a></li>
+			<li class="active"><a href="db2.html"><svg class="glyph stroked pencil"><use xlink:href="#stroked-pencil"></use></svg>Debt report</a></li>
+			
+			
+			<li role="presentation" class="divider"></li>
+			<li><a onclick="logout()" ><svg class="glyph stroked male-user"><use xlink:href="#stroked-male-user"></use></svg> Log Out</a></li>
+		</ul>
+
+	</div><!--/.sidebar-->
+		
+	<div class="col-sm-9 col-sm-offset-3 col-lg-10 col-lg-offset-2 main">			
+		
+		
+	<!--Table-->
+	
+	
+              <div class="col-md-12 col-sm-12 col-xs-12">
+                <div class="x_panel">
+                  <div class="x_title">
+                    <h2>Debtors' List</h2>
+                    <ul class="nav navbar-right panel_toolbox">
+                      <li><a class="collapse-link"><i class="fa fa-chevron-up"></i></a>
+                      </li>
+                      <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"><i class="fa fa-wrench"></i></a>
+                        <ul class="dropdown-menu" role="menu">
+                          <li><a href="#">Settings 1</a>
+                          </li>
+                          <li><a href="#">Settings 2</a>
+                          </li>
+                        </ul>
+                      </li>
+                      <li><a class="close-link"><i class="fa fa-close"></i></a>
+                      </li>
+                    </ul>
+                    <div class="clearfix"></div>
+                  </div>
+                  <div class="x_content">
+                    <p class="text-muted font-13 m-b-30">
+                     
+                    </p>
+                    <table id="datatable-buttons" class="table table-striped table-bordered">
+                      <thead>
+                        <tr>
+					
+                          
+                          <th>Name</th>
+                          <th>ID</th>
+                          <th>Account No.</th>
+                          <th>Amount</th>
+						   <th>Balance</th>
+                          <th>Issue Date</th>
+                          <th>Due Date</th>
+                          <th>Mobile Number</th>
+                          
+                          
+                        </tr>
+                      </thead>
+
+
+	
+                     <tbody id="details">
+                    
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+              </div>
+	<!---->
+								
+		
+	</div>	<!--/.main-->
+
+	<script src="js/jquery-1.11.1.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	
+	
+	
+	
+	<!-- Datatables -->
+    <script src="vendors/datatables.net/js/jquery.dataTables.min.js"></script>
+    <script src="vendors/datatables.net-bs/js/dataTables.bootstrap.min.js"></script>
+    <script src="vendors/datatables.net-buttons/js/dataTables.buttons.min.js"></script>
+    <script src="vendors/datatables.net-buttons-bs/js/buttons.bootstrap.min.js"></script>
+    <script src="vendors/datatables.net-buttons/js/buttons.flash.min.js"></script>
+    <script src="vendors/datatables.net-buttons/js/buttons.html5.min.js"></script>
+    <script src="vendors/datatables.net-buttons/js/buttons.print.min.js"></script>
+    <script src="vendors/datatables.net-fixedheader/js/dataTables.fixedHeader.min.js"></script>
+    <script src="vendors/datatables.net-keytable/js/dataTables.keyTable.min.js"></script>
+    <script src="vendors/datatables.net-responsive/js/dataTables.responsive.min.js"></script>
+    <script src="vendors/datatables.net-responsive-bs/js/responsive.bootstrap.js"></script>
+    <script src="vendors/datatables.net-scroller/js/datatables.scroller.min.js"></script>
+    <script src="vendors/jszip/dist/jszip.min.js"></script>
+    <script src="vendors/pdfmake/build/pdfmake.min.js"></script>
+    <script src="vendors/pdfmake/build/vfs_fonts.js"></script>
+
+    <!-- Custom Theme Scripts -->
+    <script src="../build/js/custom.min.js"></script>
+
+	
+	    <!-- Datatables -->
+    <script>
+      $(document).ready(function() {
+	  
+	$.ajax({
+                    type: "POST",
+                    cache: false,        
+                    url: 'php_session.php',
+                   data: {ev_date: ev_date, ev_title: ev_title, ev_content: ev_content},
+                    success: function(data) {
+                      
+						var offline= 'offline';
+						if(data == offline){
+						
+						window.location.href="login.html";
+						} else{
+									
+							
+						}
+                    }
+                });
+				
+ ////
+		 var ev_date = "4567";
+                var ev_title = "wedsf";
+				var ev_content = "swdfgh";
+           
+				
+					//alert(ev_date);
+                
+                $.ajax({
+                    type: "POST",
+                    cache: false,        
+                    url: 'php_pg_table.php',
+                   data: {ev_date: ev_date, ev_title: ev_title, ev_content: ev_content},
+                    success: function(data) {
+                    
+						$("#details").html(data);
+						  var handleDataTableButtons = function() {
+          if ($("#datatable-buttons").length) {
+            $("#datatable-buttons").DataTable({
+              dom: "Bfrtip",
+              buttons: [
+                {
+                  extend: "copy",
+                  className: "btn-sm"
+                },
+                {
+                  extend: "csv",
+                  className: "btn-sm"
+                },
+                {
+                  extend: "excel",
+                  className: "btn-sm"
+                },
+                {
+                  extend: "pdfHtml5",
+                  className: "btn-sm"
+                },
+                {
+                  extend: "print",
+                  className: "btn-sm"
+                },
+              ],
+              responsive: true
+            });
+          }
+
+		  
+        };
+		
+		
+        TableManageButtons = function() {
+          "use strict";
+          return {
+            init: function() {
+              handleDataTableButtons();
+            }
+          };
+        }();
+
+        $('#datatable').dataTable();
+        $('#datatable-keytable').DataTable({
+          keys: true
+        });
+
+        $('#datatable-responsive').DataTable();
+
+        $('#datatable-scroller').DataTable({
+          ajax: "js/datatables/json/scroller-demo.json",
+          deferRender: true,
+          scrollY: 380,
+          scrollCollapse: true,
+          scroller: true
+        });
+
+        var table = $('#datatable-fixed-header').DataTable({
+          fixedHeader: true
+        });
+
+        TableManageButtons.init();
+					
+                    }
+                });
+				
+				
+      });
+	  
+	  
+    </script>
+    <!-- /Datatables -->
+	
+	
+	
+</body>
+
+</html>
