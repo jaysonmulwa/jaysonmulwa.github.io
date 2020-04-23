@@ -1,0 +1,199 @@
+`<!DOCTYPE html>
+<html>
+<head>
+ 
+ 
+<meta charset= "utf-8" >
+<meta http-equiv= "X-UA Compatible" content= "IE=edge" >
+
+<meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+<!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+<title>DEVTEST</title>
+<link rel="shortcut icon" href="../images/pic2.png" type="image/x-icon" />
+
+
+<link href= "home.css" rel= "stylesheet" >
+
+
+ <link href="../bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  
+        <!-- Include roboto.css to use the Roboto web font, material.css to include the theme and ripples.css to style the ripple effect -->
+        <link href="../dist/css/roboto.min.css" rel="stylesheet">
+        <link href="../dist/css/material.min.css" rel="stylesheet">
+        <link href="../dist/css/ripples.min.css" rel="stylesheet">
+
+	
+ <!-- PNotify -->
+    <link href="vendors/pnotify/dist/pnotify.css" rel="stylesheet">
+    <link href="vendors/pnotify/dist/pnotify.buttons.css" rel="stylesheet">
+    <link href="vendors/pnotify/dist/pnotify.nonblock.css" rel="stylesheet">
+
+
+	
+	<script type = "text/javascript" src = "http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+	
+	
+<script type="text/javascript">
+
+  function login()
+{
+
+
+      
+                var name = $('#log_name').val();
+                var password = $('#log_password').val();
+				
+                
+                $.ajax({
+                    type: "POST",
+                    cache: false,        
+                    url: 'php_login.php',
+                    
+					data: {name: name, password: password},
+                    success: function(data) {
+                        
+						var res = data;
+						var negative = "You are not registered";
+						if (res == negative) {
+					
+								new PNotify({
+										  title: '',
+										  text: 'You are not registered.',
+										  type: 'error',
+										  styling: 'bootstrap3'
+									  })
+								
+									} else {
+								
+								window.location.href="db.html";
+								
+								}
+					
+                    }
+                });
+            
+}
+</script>	
+	
+
+	
+</head>
+
+<body>
+	
+	<div class="row">
+		<div class="col-xs-10 col-xs-offset-1 col-sm-8 col-sm-offset-2 col-md-4 col-md-offset-4">
+			<div class="login-panel panel panel-info" style="margin-top:25%">
+				<div class="panel-heading">
+				<div class="row">
+				<div class="col-lg-4">
+				
+				</div>
+				<div class="col-lg-4">
+				<img class="img-circle" src="_pics/saida.png" alt="User Avatar" height="100px" width="100px">
+				</div>
+				<div class="col-lg-4">
+				
+				</div>
+				</div>
+				
+				
+				</div>
+				
+				
+				<div class="panel-body">
+					
+										<form class="form-horizontal" action="php/login.php" method="post" id="form1">
+                                <fieldset>
+                                    <legend></legend>
+                                    <div class="form-group">
+                                        <label for="inputEmail" class="col-lg-2 control-label">Name</label>
+                                        <div class="col-lg-10">
+                                            <input type="text" class="form-control" id="log_name" name="name" placeholder="Name">
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="inputPassword" class="col-lg-2 control-label">Password</label>
+                                        <div class="col-lg-10">
+                                            <input type="password" class="form-control" id="log_password" name="password" placeholder="Password">
+                                            
+                                            <br>
+                                           
+                                        </div>
+                                    </div>
+									 <div class="form-group">
+                                      <div class="row">
+									  
+									  <div class="col-lg-4"></div>
+										
+									  <div class="col-lg-4">
+                                           
+											<button type="button" class="btn btn-info" id="register" onclick="login()">Login</button>
+										</div>
+																			  
+									  <div class="col-lg-4"></div>
+										
+										
+										</div>
+											
+                                    </div>
+                                    
+                                
+                                    
+                                   
+                                </fieldset>
+                            
+										
+										<!---->
+										
+                                          
+                                        </div>
+                                       
+										</form>
+				</div>
+			</div>
+		</div><!-- /.col-->
+	</div><!-- /.row -->	
+	
+		
+<script src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
+<script src="../jquery-1.10.2/jquery-1.10.2.min.js"></script>
+
+        <script src="../bootstrap/js/bootstrap.min.js"></script>
+
+        <script src="../dist/js/ripples.min.js"></script>
+        <script src="../dist/js/material.min.js"></script>
+		
+			 <!-- PNotify -->
+    <script src="vendors/pnotify/dist/pnotify.js"></script>
+    <script src="vendors/pnotify/dist/pnotify.buttons.js"></script>
+    <script src="vendors/pnotify/dist/pnotify.nonblock.js"></script>
+
+	
+
+		
+        <script>
+            $(document).ready(function() {
+                // This command is used to initialize some elements and make them work properly
+                $.material.init();
+            });
+        </script>
+
+	<script>
+		!function ($) {
+			$(document).on("click","ul.nav li.parent > a > span.icon", function(){		  
+				$(this).find('em:first').toggleClass("glyphicon-minus");	  
+			}); 
+			$(".sidebar span.icon").find('em:first').addClass("glyphicon-plus");
+		}(window.jQuery);
+
+		$(window).on('resize', function () {
+		  if ($(window).width() > 768) $('#sidebar-collapse').collapse('show')
+		})
+		$(window).on('resize', function () {
+		  if ($(window).width() <= 767) $('#sidebar-collapse').collapse('hide')
+		})
+	</script>	
+</body>
+
+</html>
