@@ -102,7 +102,7 @@ a:hover, a:focus, a:active {
  * ------------------------------------------------------------------- 
  */
 h1, h2, h3, h4, h5, h6, .h01, .h02, .h03, .h04, .h05, .h06 {
-	font-family: "poppins-semibold", sans-serif;
+	font-family: "product-bold", sans-serif;
 #color: #313131;
 	font-style: normal;
 	text-rendering: optimizeLegibility;
@@ -112,7 +112,7 @@ h3, .h03, h4, .h04 {
 	margin-bottom: 1.8rem;
 }
 h5, .h05, h6, .h06 {
-	font-family: "poppins-bold";
+	font-family: "product-bold";
 	margin-bottom: 1.2rem;
 }
 h1, .h01 {
@@ -217,7 +217,7 @@ blockquote cite a, blockquote cite a:visited {
 	border: none;
 }
 abbr {
-	font-family: "poppins-bold", serif;
+	font-family: "product-bold", serif;
 	font-variant: small-caps;
 	text-transform: lowercase;
 	letter-spacing: .05rem;
@@ -333,7 +333,7 @@ th, td {
 }
 th {
 	color: #313131;
-	font-family: "poppins-bold", sans-serif;
+	font-family: "product-bold", sans-serif;
 }
 td {
 	line-height: 1.5;
@@ -599,7 +599,7 @@ select:focus {
 	border-bottom: 1px solid #FF3D00;
 }
 label, legend {
-	font-family: "poppins-bold", sans-serif;
+	font-family: "product-bold", sans-serif;
 	font-size: 1.4rem;
 	margin-bottom: .6rem;
 	color: #3b3b3b;
@@ -653,7 +653,7 @@ input[type="submit"],
 input[type="reset"],
 input[type="button"] {
 	display: inline-block;
-	font-family: "poppins-bold", sans-serif;
+	font-family: "product-bold", sans-serif;
 	font-size: 1.4rem;
 	text-transform: uppercase;
 	letter-spacing: .3rem;
@@ -801,7 +801,7 @@ button::-moz-focus-inner, input::-moz-focus-inner {
 	margin: 0;
 	padding: 1.5rem .6rem 0 0;
 	font-size: 8.4rem;
-	font-family: "poppins-bold", sans-serif;
+	font-family: "product-bold", sans-serif;
 	line-height: 6rem;
 	text-indent: 0;
 	background: transparent;
@@ -921,7 +921,7 @@ button::-moz-focus-inner, input::-moz-focus-inner {
 .stats-tabs li a {
 	display: inline-block;
 	font-size: 2.5rem;
-	font-family: "poppins-bold", sans-serif;
+	font-family: "product-bold", sans-serif;
 	border: none;
 	color: #252525;
 }
@@ -956,7 +956,7 @@ button::-moz-focus-inner, input::-moz-focus-inner {
 	position: absolute;
 	left: 0;
 	top: -3rem;
-	font-family: "poppins-bold", sans-serif;
+	font-family: "product-bold", sans-serif;
 	color: #313131;
 	text-transform: uppercase;
 	letter-spacing: .2rem;
@@ -1339,7 +1339,7 @@ header .logo a {
 }
 .intro-content h5 {
 	color: #FF3D00;
-	font-family: "poppins-bold", sans-serif;
+	font-family: "product-bold", sans-serif;
 	font-size: 2.3rem;
 	line-height: 1.565;
 	margin-bottom: 0;
@@ -1523,7 +1523,7 @@ header .logo a {
 	margin-bottom: 3.6rem;
 }
 .about-content h3 {
-	font-family: "poppins-bold", sans-serif;
+	font-family: "product-bold", sans-serif;
 	font-size: 1.8rem;
 	text-transform: uppercase;
 	letter-spacing: .25rem;
@@ -1537,7 +1537,7 @@ header .logo a {
 	margin-bottom: .6rem;
 }
 .about-content .info-list li strong {
-	font-family: "poppins-bold", sans-serif;
+	font-family: "product-bold", sans-serif;
 	color: #313131;
 	text-transform: uppercase;
 	letter-spacing: .2rem;
@@ -1909,7 +1909,7 @@ header .logo a {
 	padding: 1.8rem 3.6rem 3rem;
 }
 .popup-modal .description-box h4 {
-	font-family: "poppins-bold", sans-serif;
+	font-family: "product-bold", sans-serif;
 	font-size: 1.5rem;
 	line-height: 2.4rem;
 	margin-bottom: .6rem;
@@ -1921,7 +1921,7 @@ header .logo a {
 	margin-bottom: 12px;
 }
 .popup-modal .categories {
-	font-family: "poppins-bold", sans-serif;
+	font-family: "product-bold", sans-serif;
 	font-size: 1.1rem;
 	line-height: 1.8rem;
 	text-transform: uppercase;
@@ -1936,7 +1936,7 @@ header .logo a {
 	background: #000000;
 }
 .popup-modal .link-box a {
-	font-family: "poppins-bold", sans-serif;
+	font-family: "product-bold", sans-serif;
 	font-size: 1.2rem;
 	line-height: 6rem;
 	color: #FFFFFF;
@@ -2301,7 +2301,7 @@ header .logo a {
 	clear: both;
 }
 #contact form .form-field label {
-	font-family: "poppins-bold", sans-serif;
+	font-family: "product-bold", sans-serif;
 	font-size: 1.1rem;
 	line-height: 2.4rem;
 	position: absolute;
@@ -2398,7 +2398,7 @@ header .logo a {
 }
 #submit-loader .text-loader {
 	display: none;
-	font-family: "poppins-bold", sans-serif;
+	font-family: "product-bold", sans-serif;
 	color: #FFFFFF;
 	letter-spacing: .3rem;
 	text-transform: uppercase;
