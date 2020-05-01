@@ -1035,7 +1035,7 @@ button::-moz-focus-inner, input::-moz-focus-inner {
 	position: relative;
 }
 .section-intro h1 {
-	font-family: "poppins-semibold", serif;
+	font-family: "product-bold", serif;
 	font-size: 3.6rem;
 	color: #313131;
 	line-height: 1.25;
@@ -1221,7 +1221,7 @@ header .logo a {
 #main-nav-wrap {
 	display: block;
 	width: 100%;
-	font-family: "poppins-medium", sans-serif;
+	font-family: "product-regular", sans-serif;
 	font-size: 1.5rem;
 	position: absolute;
 	top: 100%;
@@ -1327,7 +1327,7 @@ header .logo a {
 }
 .intro-content h1 {
 	color: #FFFFFF;
-	font-family: "poppins-medium", sans-serif;
+	font-family: "product-regular", sans-serif;
 	font-size: 8.4rem;
 	line-height: 1.071;
 	max-width: 900px;
@@ -2208,7 +2208,7 @@ header .logo a {
 	font-size: 3.6rem;
 	margin-top: 1.2rem;
 	margin-bottom: 0;
-	font-family: "poppins-medium", sans-serif;
+	font-family: "product-regular", sans-serif;
 	color: white;
 }
 #stats .stat-title {
