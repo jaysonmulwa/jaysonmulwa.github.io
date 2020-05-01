@@ -154,7 +154,7 @@ p img {
 	margin: 0;
 }
 p.lead {
-	font-family: "lora-regular", serif;
+	font-family: "product-regular", serif;
 	font-size: 2rem;
 	line-height: 1.8;
 	color: #888888;
@@ -324,7 +324,7 @@ table {
 	border-width: 0;
 	width: 100%;
 	max-width: 100%;
-	font-family: "lora-regular", sans-serif;
+	font-family: "product-regular", sans-serif;
 }
 th, td {
 	padding: 1.5rem 3rem;
@@ -1348,7 +1348,7 @@ header .logo a {
 	text-shadow: 0 0 6px rgba(0, 0, 0, 0.2);
 }
 .intro-content .intro-position {
-	font-family: "lora-regular", serif;
+	font-family: "product-regular", serif;
 	font-size: 1.7rem;
 	line-height: 2.4rem;
 	text-transform: uppercase;
