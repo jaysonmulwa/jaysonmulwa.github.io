@@ -35,9 +35,19 @@
  *
  * ------------------------------------------------------------------- 
  */
-@import url("fonts.css");
+/*@import url("fonts.css");*/
 @import url("font-awesome/css/font-awesome.min.css");
 @import url("micons/micons.css");
+@font-face {
+    font-family: 'lora-bold';
+    src: url('../fonts/lora/lora-bold-webfont.eot');
+    src: url('../fonts/lora/lora-bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/lora/lora-bold-webfont.woff') format('woff'),
+         url('../fonts/lora/lora-bold-webfont.ttf') format('truetype'),
+         url('../fonts/lora/lora-bold-webfont.svg#lorabold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
 
 
 /** 
