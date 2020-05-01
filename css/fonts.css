@@ -51,6 +51,20 @@
     font-style: normal;
 }
 
+@font-face {
+    font-family: 'product-bold';
+    src: url('./Product_Sans_Bold.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'product-italic';
+    src: url('./Product_Sans_Italic.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
 
 /*
  * Poppins 
