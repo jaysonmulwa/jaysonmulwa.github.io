@@ -171,10 +171,10 @@ em, i, strong, b {
 	font-weight: normal;
 }
 em, i {
-	font-family: "lora-italic", serif;
+	font-family: "product-italic", serif;
 }
 strong, b {
-	font-family: "lora-bold", serif;
+	font-family: "product-bold", serif;
 }
 small {
 	font-size: 1.2rem;
